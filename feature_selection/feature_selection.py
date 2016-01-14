@@ -31,5 +31,5 @@ def rank_to_dict(ranks, names, order=1):
 
 lr = LinearRegression(normalize=True)
 lr.fit(X, Y)
-
+ranks["Linear reg"] = rank_to_dict(np.abs(lr.coef_), names)
 
