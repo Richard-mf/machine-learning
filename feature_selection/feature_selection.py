@@ -73,7 +73,7 @@ for i in range(X.shape[1]):
 
 ranks["MIC"] = rank_to_dict(mic_scores, names)
 
-#-----------
+#----statistics--out---------
 r = {}
 for name in names:
     r[name] = round(np.mean([ranks[method][name] 
